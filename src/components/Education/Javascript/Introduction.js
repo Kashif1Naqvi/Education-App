@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 
-class Introduction extends Component{
+class IntroductionJs extends Component{
   render(){
     return(
-      <div  className="container">
-      <h1>An Introduction to JavaScript</h1>
+      <div  className="container text-muted">
+      <h1>Introduction to JavaScript</h1>
         <p>
         Let’s see what’s so special about JavaScript, what we can achieve with it and which other technologies play well with it.
         </p>
@@ -28,4 +28,4 @@ class Introduction extends Component{
     );
   }
 }
-export default Introduction;
+export default IntroductionJs;

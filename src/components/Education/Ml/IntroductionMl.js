@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 
-class Introduction extends Component {
+class IntroductionMl extends Component {
   render(){
     return(
-      <div className="container">
+      <div className="container text-muted">
         <div className="row">
           <div className="col-sm-4" >
               <div className="embed-responsive embed-responsive-16by9" >
@@ -45,4 +45,4 @@ class Introduction extends Component {
     );
   }
 }
-export default Introduction;
+export default IntroductionMl;

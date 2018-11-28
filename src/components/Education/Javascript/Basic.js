@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
 
-class Basic extends Component{
+class BasicJs extends Component{
   render(){
     return(
-      <div  className="container" >
+      <div  className="container text-muted" >
           <h3>
             <mark> JavaScript Data Types Explained</mark>
           </h3>
@@ -93,4 +93,4 @@ class Basic extends Component{
     );
   }
 }
-export default Basic;
+export default BasicJs;

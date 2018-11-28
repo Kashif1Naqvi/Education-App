@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
 
-class Advance extends Component{
+class AdvanceJs extends Component{
   render(){
     return(
-      <div>
+      <div className="container text-muted">
           <h2>Inheritance and the prototype chain</h2>
           <p>
             JavaScript is a bit confusing for developers experienced in class-based languages (like Java or C++), as it is dynamic and does not provide a class implementation per se (the class keyword is introduced in <b>ES2015</b>, but is syntactical sugar, JavaScript remains prototype-based).
@@ -18,7 +18,8 @@ class Advance extends Component{
             <h4>Using prototypes in JavaScriptSection</h4>
             <p>
             In JavaScript, as mentioned above, functions are able to have properties. All functions have a special property named prototype. Please note that the code below is free-standing (it is safe to assume there is no other JavaScript on the webpage other than the below code). For the best learning experience, it is highly reccomended that you open a console (which, in Chrome and Firefox, can be done by pressing Ctrl+Shift+I), navigating to the "console" tab, copying-and-pasting in the below JavaScript code, and run it by pressing the Enter/Return key
-            </p><br/>
+            </p>
+            <br/>
             <pre>
                 function doSomething(){}
                     console.log( doSomething.prototype );
@@ -30,4 +31,4 @@ class Advance extends Component{
     );
   }
 }
-export default Advance;
+export default AdvanceJs;

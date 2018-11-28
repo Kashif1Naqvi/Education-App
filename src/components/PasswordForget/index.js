@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 
 const PasswordForgetPage = () =>
-  <div>
+  <div className="container text-muted" style={{marginTop:"80px"}} >
     <h1>PasswordForget</h1>
     <PasswordForgetForm />
   </div>
@@ -13,10 +12,9 @@ const PasswordForgetPage = () =>
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value,
 });
-
 const INITIAL_STATE = {
   email: '',
-  error: null,
+  error: 'this is error',
 };
 
 class PasswordForgetForm extends Component {
@@ -49,7 +47,7 @@ class PasswordForgetForm extends Component {
     const isInvalid = email === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} >
         <div className="form-group">
         <input
           value={this.state.email}

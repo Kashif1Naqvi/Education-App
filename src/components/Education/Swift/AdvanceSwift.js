@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 class Advance extends Component{
   render(){
     return(
-      <div className="container" >
+    <div className="container text-muted" >
         <h1>Basic Operators</h1>
           <p>
               An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (+) adds two numbers, as in let i = 1 + 2, and the logical AND operator (&&) combines two Boolean values, as in if enteredDoorCode && passedRetinaScan.
@@ -2232,7 +2232,7 @@ class Advance extends Component{
                                             <span className="k">let</span>
                                             <span className="nv">sparklingHeart</span> =
                                             <span className="s">&quot;\u[1F496]&quot;</span>
-                                            <span className="c"> 💖, Unicode scalar U+1F496</span>
+                                            <span className="c">  Unicode scalar U+1F496</span>
                                         </li>
                                     </ol>
                                 </div>
@@ -2440,41 +2440,6 @@ class Advance extends Component{
                             <span className="pre">in</span>
                         </code> loop:
                     </p>
-                    <div className="highlight-swift notranslate">
-                        <div className="code-sample">
-                            <div className="Swift highlight">
-                                <ol className="code-lines">
-                                    <li>
-                                        <span className="k">for</span>
-                                        <span className="nv">character</span>
-                                        <span className="k">in</span>
-                                        <span className="s">&quot;Dog!🐶&quot;</span> <mark>prenthisis</mark>
-                                    </li>
-                                    <li>
-                                        <span className="nv">print</span>(
-                                        <span className="nv">character</span>)
-                                    </li>
-                                    <li>}
-</li>
-                                    <li>
-                                        <span className="c"> D</span>
-                                    </li>
-                                    <li>
-                                        <span className="c"> o</span>
-                                    </li>
-                                    <li>
-                                        <span className="c"> g</span>
-                                    </li>
-                                    <li>
-                                        <span className="c"> !</span>
-                                    </li>
-                                    <li>
-                                        <span className="c"> 🐶</span>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
                     <p>The 
                         <code className="docutils literal notranslate">
                             <span className="pre">for</span>
@@ -2526,7 +2491,7 @@ class Advance extends Component{
                                         <span className="s">&quot;a&quot;</span>,
                                         <span className="s">&quot;t&quot;</span>,
                                         <span className="s">&quot;!&quot;</span>,
-                                        <span className="s">&quot;🐱&quot;</span>]
+                                        <span className="s">&quot;&quot;</span>]
                                     </li>
                                     <li>
                                         <span className="k">let</span>
@@ -2539,7 +2504,7 @@ class Advance extends Component{
                                         <span className="nv">catString</span>)
                                     </li>
                                     <li>
-                                        <span className="c"> Prints &quot;Cat!🐱&quot;</span>
+                                        <span className="c"> Prints &quot;Cat!&quot;</span>
                                     </li>
                                 </ol>
                             </div>
@@ -2896,7 +2861,7 @@ class Advance extends Component{
                                 <span className="pre">CHICK</span>
                             </code> (
                             <code className="docutils literal notranslate">
-                                <span className="pre">&quot;🐥&quot;</span>
+                                <span className="pre">&quot;&quot;</span>
                             </code>).
                         </p>
                         <p>Note that not all 21-bit Unicode scalar values are assigned to a character—some scalars are reserved for future assignment or for use in UTF-16 encoding. Scalar values that have been assigned to a character typically also have a name, such as 
@@ -3105,7 +3070,7 @@ class Advance extends Component{
                                             <span className="s">&quot;\u[1F1FA]\u[1F1F8]&quot;</span>
                                         </li>
                                         <li>
-                                            <span className="c"> regionalIndicatorForUS is 🇺🇸</span>
+                                            <span className="c"> regionalIndicatorForUS is </span>
                                         </li>
                                     </ol>
                                 </div>
@@ -3131,7 +3096,7 @@ class Advance extends Component{
                                     <li>
                                         <span className="k">let</span>
                                         <span className="nv">unusualMenagerie</span> =
-                                        <span className="s">&quot;Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪&quot;</span>
+                                        <span className="s">&quot;Koala , Snail , Penguin , Dromedary &quot;</span>
                                     </li>
                                     <li>
                                         <span className="nv">print</span>(
@@ -4145,21 +4110,20 @@ class Advance extends Component{
                         </code> value in one of three other Unicode-compliant representations:
                     </p>
                     <ul className="simple">
-                        <li>A collection of UTF-8 code units (accessed with the string’s 
+                        A collection of UTF-8 code units (accessed with the string’s 
                             <code className="docutils literal notranslate">
                                 <span className="pre">utf8</span>
                             </code> property)
-                        </li>
-                        <li>A collection of UTF-16 code units (accessed with the string’s 
+                        
+                        A collection of UTF-16 code units (accessed with the string’s 
                             <code className="docutils literal notranslate">
                                 <span className="pre">utf16</span>
                             </code> property)
-                        </li>
-                        <li>A collection of 21-bit Unicode scalar values, equivalent to the string’s UTF-32 encoding form (accessed with the string’s 
+                                                A collection of 21-bit Unicode scalar values, equivalent to the string’s UTF-32 encoding form (accessed with the string’s 
                             <code className="docutils literal notranslate">
                                 <span className="pre">unicodeScalars</span>
                             </code> property)
-                        </li>
+                        
                     </ul>
                     <p>Each example below shows a different representation of the following string, which is made up of the characters 
                         <code className="docutils literal notranslate">
@@ -4197,7 +4161,7 @@ class Advance extends Component{
                                     <li>
                                         <span className="k">let</span>
                                         <span className="nv">dogString</span> =
-                                        <span className="s">&quot;Dog‼🐶&quot;</span>
+                                        <span className="s">&quot;Dog‼&quot;</span>
                                     </li>
                                 </ol>
                             </div>
@@ -4608,9 +4572,7 @@ class Advance extends Component{
                                         <li>
                                             <span className="c"> ‼</span>
                                         </li>
-                                        <li>
-                                            <span className="c"> 🐶</span>
-                                        </li>
+                                        
                                     </ol>
                                 </div>
                             </div>

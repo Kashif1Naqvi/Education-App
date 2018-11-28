@@ -7,7 +7,7 @@ import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 
 const SignInPage = ({ history }) =>
-  <div className="container-fluid" style={{marginTop:"80px"}}>
+  <div className="container-fluid text-muted" style={{marginTop:"80px"}}>
 
     <h1 >SignIn</h1>
     <SignInForm history={history} />
@@ -45,7 +45,7 @@ class SignInForm extends Component {
     auth.doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState(() => ({ ...INITIAL_STATE }));
-        history.push(routes.HOME);
+        history.push(routes.LANDING);
       })
       .catch(error => {
         this.setState(updateByPropertyName('error', error));

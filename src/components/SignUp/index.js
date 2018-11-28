@@ -8,7 +8,7 @@ import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
 
 const SignUpPage = ({ history }) =>
-  <div>
+  <div style={{marginTop:"80px"}} >
     <h1>SignUp</h1>
     <SignUpForm history={history} />
   </div>
@@ -31,7 +31,7 @@ class SignUpForm extends Component {
 
     this.state = { ...INITIAL_STATE };
   }
-
+ 
   onSubmit = (event) => {
     const {
       username,
@@ -39,21 +39,18 @@ class SignUpForm extends Component {
       passwordOne,
     } = this.state;
 
-    const {
-      history,
-    } = this.props;
-
+    console.log("hello world",this.props.history)
     auth.doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
-
+          console.log("hello",authUser);
         // Create a user in your own accessible Firebase Database too
         db.doCreateUser(authUser.user.uid, username, email)
           .then(() => {
             this.setState(() => ({ ...INITIAL_STATE }));
-            history.push(routes.HOME);
+            this.props.history.push(routes.HOME);
           })
           .catch(error => {
-            this.setState(updateByPropertyName('error', error));
+            this.setState(updateByPropertyName('this', error));
           });
 
       })
@@ -74,13 +71,10 @@ class SignUpForm extends Component {
     } = this.state;
 
     const isInvalid =
-      passwordOne !== passwordTwo ||
-      passwordOne === '' ||
-      username === '' ||
-      email === '';
+      passwordOne !== passwordTwo || passwordOne === '' || username === '' || email === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form style={{marginTop:"80px"}} className="text-muted"  onSubmit={this.onSubmit}>
         <div className="form-group">
         <input
           value={username}

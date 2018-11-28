@@ -1,10 +1,10 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { inject } from 'mobx-react';
 
 import { firebase } from '../../firebase';
 
-const withAuthentication = (Component) => {
-  class WithAuthentication extends React.Component {
+const withAuthentication = (Data) => {
+  class WithAuthentication extends Component {
     componentDidMount() {
       const { sessionStore } = this.props;
 
@@ -16,7 +16,7 @@ const withAuthentication = (Component) => {
 
     render() {
       return (
-        <Component {...this.props} />
+        <Data {...this.props} />
       );
     }
   }

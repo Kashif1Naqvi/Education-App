@@ -45,7 +45,7 @@ class PasswordChangeForm extends Component {
       passwordOne === '';
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} className="container text-muted" >
         <div className="form-group">
         <input
           value={passwordOne}

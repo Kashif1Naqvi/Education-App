@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { withRouter } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 import { compose } from 'recompose';
@@ -6,8 +6,8 @@ import { compose } from 'recompose';
 import { firebase } from '../../firebase';
 import * as routes from '../../constants/routes';
 
-const withAuthorization = (condition) => (Component) => {
-  class WithAuthorization extends React.Component {
+const withAuthorization = (condition) => (Data) => {
+  class WithAuthorization extends Component {
     componentDidMount() {
       firebase.auth.onAuthStateChanged(authUser => {
         if (!condition(authUser)) {
@@ -17,7 +17,7 @@ const withAuthorization = (condition) => (Component) => {
     }
 
     render() {
-      return this.props.sessionStore.authUser ? <Component {...this.props} /> : null;
+      return this.props.sessionStore.authUser ? <Data {...this.props} /> : null;
     }
   }
 

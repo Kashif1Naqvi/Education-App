@@ -4,7 +4,7 @@ import React,{Component} from 'react';
 class Introduction extends Component{
   render(){
     return(
-      <div className="container">
+      <div className="container text-muted">
       <div className="contanier">
         <h1>Introduction</h1>
         <p>

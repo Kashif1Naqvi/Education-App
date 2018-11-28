@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 class Basic extends Component{
   render(){
     return(
-      <div className="container">
+      <div className="container text-muted">
               <h1>Swift The Basics</h1>
               <p>
                   Swift is a new programming language for iOS, macOS, watchOS, and tvOS app development. Nonetheless, many parts of Swift will be familiar from your experience of developing in C and Objective-C.
@@ -27,7 +27,7 @@ class Basic extends Component{
               </p><br/>
               <code>
                   let maximumNumberOfLoginAttempts = 10 <br/>
-                  var currentLoginAttempt = 0
+                  var currentLoginAttempt = 0 <br/>
               </code>
               <mark>
                   This code can be read as:
