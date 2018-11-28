@@ -3,21 +3,22 @@ import 'firebase/auth';
 import 'firebase/database';
 
 const prodConfig = {
-  apiKey: YOUR_API_KEY,
-  authDomain: YOUR_AUTH_DOMAIN,
-  databaseURL: YOUR_DATABASE_URL,
-  projectId: YOUR_PROJECT_ID,
-  storageBucket: '',
-  messagingSenderId: YOUR_MESSAGING_SENDER_ID,
+  apiKey: "AIzaSyCpuwMR2FNk79rmG5ngsjJRxiDEvyY5uNA",
+  authDomain: "authentication-88960.firebaseapp.com",
+  databaseURL: "https://authentication-88960.firebaseio.com",
+  projectId: "authentication-88960",
+  storageBucket: "authentication-88960.appspot.com",
+  messagingSenderId: "976559648766"
 };
 
-const devConfig = {
-  apiKey: YOUR_API_KEY,
-  authDomain: YOUR_AUTH_DOMAIN,
-  databaseURL: YOUR_DATABASE_URL,
-  projectId: YOUR_PROJECT_ID,
-  storageBucket: '',
-  messagingSenderId: YOUR_MESSAGING_SENDER_ID,
+
+var devConfig = {
+  apiKey: "AIzaSyCpuwMR2FNk79rmG5ngsjJRxiDEvyY5uNA",
+  authDomain: "authentication-88960.firebaseapp.com",
+  databaseURL: "https://authentication-88960.firebaseio.com",
+  projectId: "authentication-88960",
+  storageBucket: "authentication-88960.appspot.com",
+  messagingSenderId: "976559648766"
 };
 
 const config = process.env.NODE_ENV === 'production'

@@ -1,47 +1,27 @@
 import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
-import { compose } from 'recompose';
 
-import withAuthorization from '../Session/withAuthorization';
-import { db } from '../../firebase';
 
 class HomePage extends Component {
-  componentDidMount() {
-    const { userStore } = this.props;
+render() {
+ return (
+     <div className="container">
+  <div className="container-fluid" style={{marginTop:"80px"}}>
+  <h1>Welcome To Learn New Ideas </h1>
+    <p>This Website can be Built for Those students who cannot pay lot of money for learning new Things</p>
+    <b>Code is art, Every one master, after the Beginner First</b>
+    <i> Aliya Can Say 
+        <b>
+          A Wise Man can say Something,But a fool Always be say Something
+        </b>
+      so learn from your Art Some Basic Introduction About new languages use in 2018 and more.
+      After ten years after the scope is Big Data Data Science Machine Learning so we include all the ralitive data in it
+    </i>
 
-    db.onceGetUsers().then(snapshot =>
-      userStore.setUsers(snapshot.val())
-    );
-  }
-
-  render() {
-    const { users } = this.props.userStore;
-
-    return (
-      <div>
-        <h1>Home</h1>
-        <p>The Home Page is accessible by every signed in user.</p>
-
-        { !!users && <UserList users={users} /> }
+  </div>
       </div>
     );
   }
 }
 
-const UserList = ({ users }) =>
-  <div>
-    <h2>List of Usernames of Users</h2>
-    <p>(Saved on Sign Up in Firebase Database)</p>
 
-    {Object.keys(users).map(key =>
-      <div key={key}>{users[key].username}</div>
-    )}
-  </div>
-
-const authCondition = (authUser) => !!authUser;
-
-export default compose(
-  withAuthorization(authCondition),
-  inject('userStore'),
-  observer
-)(HomePage);
+export default HomePage;

@@ -2,7 +2,7 @@ import React from 'react';
 import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router-dom';
 import { compose } from 'recompose';
-
+import './index.css';
 import SignOutButton from '../SignOut';
 import * as routes from '../../constants/routes';
 
@@ -15,19 +15,36 @@ const Navigation = ({ sessionStore }) =>
   </div>
 
 const NavigationAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.HOME}>Home</Link></li>
-    <li><Link to={routes.ACCOUNT}>Account</Link></li>
-    <li><SignOutButton /></li>
-  </ul>
+    <nav className="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <h1 className="navbar-brand" >Edu App</h1>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse " id="collapsibleNavbar" >
+      <ul className="navbar-nav">
+          <li className="nav-item" ><Link className="nav-link" to={routes.LANDING} >About</Link></li>
+          <li className="nav-item"><Link className="nav-link" to={routes.HOME}>Home</Link></li>
+          <li className="nav-item"><Link className="nav-link" to={routes.EDUCATION}>Education          </Link></li>
+          <li className="nav-item"><Link className="nav-link" to={routes.ACCOUNT}>Account</Link></li>
+          <li ><SignOutButton /></li>
+      </ul>
+      
 
+      </div>
+    </nav>
 const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-  </ul>
-
+     <nav className="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+     <h1 className="navbar-brand" >Edu App</h1>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse " id="collapsibleNavbar" >
+          <ul className="navbar-nav">
+          <li className="nav-item" ><Link className="nav-link" to={routes.LANDING}>About</Link></li>
+          <li className="nav-item" ><Link className="nav-link" to={routes.SIGN_IN}>Sign In</Link></li>
+          </ul>
+      </div>
+      </nav>
 export default compose(
   inject('sessionStore'),
   observer

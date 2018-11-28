@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import {
   Link,
   withRouter,
@@ -81,31 +81,43 @@ class SignUpForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
+        <div className="form-group">
         <input
           value={username}
           onChange={event => this.setState(updateByPropertyName('username', event.target.value))}
           type="text"
           placeholder="Full Name"
+          className="form-control"
         />
+        </div>
+        <div className="form-group">
         <input
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
+          className="form-control"
         />
+        </div>
+        <div className="form-group">
         <input
           value={passwordOne}
           onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
           type="password"
           placeholder="Password"
+          className="form-control"
         />
+        </div>
+        <div className="form-group">
         <input
           value={passwordTwo}
           onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
+          className="form-control"
         />
-        <button disabled={isInvalid} type="submit">
+        </div>
+        <button disabled={isInvalid} type="submit" className="btn btn-default" >
           Sign Up
         </button>
 
@@ -116,10 +128,10 @@ class SignUpForm extends Component {
 }
 
 const SignUpLink = () =>
-  <p>
+  <p className="text-info">
     Don't have an account?
     {' '}
-    <Link to={routes.SIGN_UP}>Sign Up</Link>
+    <Link to={routes.SIGN_UP} className="btn btn-success">Sign Up</Link>
   </p>
 
 export default withRouter(SignUpPage);

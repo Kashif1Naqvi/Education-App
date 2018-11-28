@@ -50,13 +50,16 @@ class PasswordForgetForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
+        <div className="form-group">
         <input
           value={this.state.email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
+          className="form-control"
         />
-        <button disabled={isInvalid} type="submit">
+        </div>
+        <button disabled={isInvalid} type="submit" className="btn btn-success">
           Reset My Password
         </button>
 
@@ -67,8 +70,8 @@ class PasswordForgetForm extends Component {
 }
 
 const PasswordForgetLink = () =>
-  <p>
-    <Link to={routes.PASSWORD_FORGET}>Forgot Password?</Link>
+  <p className="btn btn-default">
+    <Link to={routes.PASSWORD_FORGET} className="text-info">Forgot Password?</Link>
   </p>
 
 export default PasswordForgetPage;

@@ -1,5 +1,5 @@
 {
-  "name": "react-mobx-firebase-authentication",
+  "name": "Edu-App",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,6 +35,7 @@
     "promise": "8.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.32.4",
     "react-dev-utils": "^4.0.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",

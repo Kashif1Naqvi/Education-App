@@ -7,8 +7,8 @@ import PasswordChangeForm from '../PasswordChange';
 import withAuthorization from '../Session/withAuthorization';
 
 const AccountPage = ({ sessionStore }) =>
-  <div>
-    <h1>Account: {sessionStore.authUser.email}</h1>
+  <div className="container-fluid" style={{marginTop:"80px"}}>
+    <h2><i>Account</i>:<small> {sessionStore.authUser.email}</small></h2>
     <PasswordForgetForm />
     <PasswordChangeForm />
   </div>

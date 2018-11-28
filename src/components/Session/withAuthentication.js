@@ -10,8 +10,7 @@ const withAuthentication = (Component) => {
 
       firebase.auth.onAuthStateChanged(authUser => {
         authUser
-          ? sessionStore.setAuthUser(authUser)
-          : sessionStore.setAuthUser(null);
+          ? sessionStore.setAuthUser(authUser): sessionStore.setAuthUser(null);
       });
     }
 
