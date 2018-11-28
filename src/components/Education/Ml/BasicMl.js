@@ -16,7 +16,7 @@ class BasicMl extends Component {
                                                 <h2>Introduction</h2>
                                                 <p style={{textAlign:" justify"}}>There has been a renewed interest in machine learning in last few years. This revival seems to be driven by strong fundamentals &#8211; loads of data being emitted by sensors across the globe, with cheap storage and lowest ever computational costs!</p>
                                                 <p style={{textAlign:" justify"}}>However, not every one around understands what machine learning is. Here are a few examples:</p>
-                                                <ul>
+                                                <ul>What is Machine Learning
                                                     <li style={{textAlign:" justify"}}>
                                                         <a target="blank" className="fancy-title" href="http://discuss.analyticsvidhya.com/t/what-is-machine-learning-and-how-is-it-different-from-big-data-and-business-analytics/306"  rel="noopener" data-ember-action="1664">What is Machine Learning and how is it different from Big Data and Business Analytics?</a>
                                                     </li>
