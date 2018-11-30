@@ -1,7 +1,5 @@
- Education App
-
+Education App
 ## Features
-
 * uses:
   * React (create-react-app)
   * firebase 5.0.0
@@ -15,7 +13,5 @@
   * Password Change
   * Protected Routes with Authorization
   * Database: Users
-
-
 This site is built for proffesional web masters
 in this site my firebase is use

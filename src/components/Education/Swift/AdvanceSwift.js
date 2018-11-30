@@ -132,7 +132,7 @@ class Advance extends Component{
                 </div>
                 <div className="section" id="ID62">
                     <h2>Assignment Operator
-                        <a className="headerlink" href="#ID62" title="Permalink to this headline">¶</a>
+                        
                     </h2>
                     <p>The 
                         <em>assignment operator</em> (
@@ -310,7 +310,7 @@ class Advance extends Component{
                     </div>
                     <div className="section" id="ID64">
                         <h3>Remainder Operator
-                            <a className="headerlink" href="#ID64" title="Permalink to this headline">¶</a>
+                            
                         </h3>
                         <p>The 
                             <em>remainder operator</em> (
@@ -502,7 +502,7 @@ class Advance extends Component{
                     </div>
                     <div className="section" id="ID67">
                         <h3>Unary Minus Operator
-                            <a className="headerlink" href="#ID67" title="Permalink to this headline">¶</a>
+                            
                         </h3>
                         <p>The sign of a numeric value can be toggled using a prefixed 
                             <code className="docutils literal notranslate">
@@ -543,7 +543,7 @@ class Advance extends Component{
                     </div>
                     <div className="section" id="ID68">
                         <h3>Unary Plus Operator
-                            <a className="headerlink" href="#ID68" title="Permalink to this headline">¶</a>
+                            
                         </h3>
                         <p>The 
                             <em>unary plus operator</em> (
@@ -575,7 +575,7 @@ class Advance extends Component{
                 </div>
                 <div className="section" id="ID69">
                     <h2>Compound Assignment Operators
-                        <a className="headerlink" href="#ID69" title="Permalink to this headline">¶</a>
+                        
                     </h2>
                     <p>Like C, Swift provides 
                         <em>compound assignment operators</em> that combine assignment (
@@ -640,7 +640,7 @@ class Advance extends Component{
                 </div>
                 <div className="section" id="ID70">
                     <h2>Comparison Operators
-                        <a className="headerlink" href="#ID70" title="Permalink to this headline">¶</a>
+                        
                     </h2>
                     <p>Swift supports all standard C 
                         <em>comparison operators</em>:
@@ -908,7 +908,7 @@ class Advance extends Component{
                 </div>
                 <div className="section" id="ID71">
                     <h2>Ternary Conditional Operator
-                        <a className="headerlink" href="#ID71" title="Permalink to this headline">¶</a>
+                        
                     </h2>
                     <p>The 
                         <em>ternary conditional operator</em> is a special operator with three parts, which takes the form
@@ -1041,7 +1041,7 @@ class Advance extends Component{
                 </div>
                 <div className="section" id="ID72">
                     <h2>Nil-Coalescing Operator
-                        <a className="headerlink" href="#ID72" title="Permalink to this headline">¶</a>
+                        
                     </h2>
                     <p>The 
                         <em>nil-coalescing operator</em> (
@@ -1565,7 +1565,7 @@ class Advance extends Component{
                     </ul>
                     <div className="section" id="ID77">
                         <h3>Logical NOT Operator
-                            <a className="headerlink" href="#ID77" title="Permalink to this headline">¶</a>
+                            
                         </h3>
                         <p>The 
                             <em>logical NOT operator</em> (
@@ -1875,7 +1875,7 @@ class Advance extends Component{
                     </div>
                     <div className="section" id="ID81">
                         <h3>Explicit Parentheses
-                            <a className="headerlink" href="#ID81" title="Permalink to this headline">¶</a>
+                            
                         </h3>
                         <p>It’s sometimes useful to include parentheses when they’re not strictly needed, to make the intention of a complex expression easier to read. In the door access example above, it’s useful to add parentheses around the first part of the compound expression to make its intent explicit:</p>
                         <div className="highlight-swift notranslate">

@@ -27,11 +27,6 @@ class BasicMl extends Component {
                                                 <p style={{textAlign:" justify"}}>Here was a little funny (but immensely true) take on the topic we circulated on our 
                                                     <a target="blank" href="http://www.facebook.com/analyticsvidhya"  rel="nofollow noopener">Facebook page</a> recently.
                                                 </p>
-                                                <p>
-                                                    <a target="blank" rel="lightbox" href="https://www.analyticsvidhya.com/wp-content/uploads/2015/06/10945756_10202550638602268_6848260291113352290_n.jpg">
-                                                        <img className=" size-full wp-image-17016 aligncenter" src="https://www.analyticsvidhya.com/wp-content/uploads/2015/06/10945756_10202550638602268_6848260291113352290_n.jpg" alt="what is machine learning" width="657" height="623" srcSet="https://www.analyticsvidhya.com/wp-content/uploads/2015/06/10945756_10202550638602268_6848260291113352290_n.jpg 657w, https://www.analyticsvidhya.com/wp-content/uploads/2015/06/10945756_10202550638602268_6848260291113352290_n-300x284.jpg 300w" sizes="(max-width: 657px) 100vw, 657px" />
-                                                    </a>
-                                                </p>
                                                 <p style={{textAlign:" justify"}}>Coming to the point, given the amount of confusion on the topic, we thought to create an awesome introductory series of articles on machine learning. The idea is to do away with all the jargons, which might have intimidated you in past and create something which can be read by a 5 year old (ok&#8230;sorry, may be a high school pass out)!</p>
                                                 <p>&nbsp;</p>
                                                 <h2 style={{textAlign:" justify"}}>So what exactly is machine learning? My small experiment&#8230;</h2>

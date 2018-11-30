@@ -22,7 +22,7 @@ class Contact extends Component {
                   <ul className="contact-info">
                     <li className="phone"><a><b><i>+923069861434</i></b></a></li>
                     <li className="mail"><a><b><i>naqvishah582@gmail.com</i></b></a></li>
-                    <li className="twitter"><a><b><i>Kashif Naqvi</i></b></a></li>
+                    <li className="twitter"><a href="https://twitter.com/naqvishah582" target="blank"><b><i>Kashif Naqvi</i></b></a></li>
                   </ul>
                 </section> 
             </div>

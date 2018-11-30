@@ -3,8 +3,8 @@ import './css/style.css';
 class Footer extends Component{
   render(){
     return(
-      <div  className="text-muted">
-			<iframe width="100%" height="350" title="Google map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed" /> 
+      <div  className="text-muted" style={{marginTop:"20px"}} >
+			<iframe width="100%" height="350" title="Google map" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed" /> 
       <section className="footer footer_w3layouts_section_1its py-md-5">
 	<div className="container py-5">
 		<div className="row footer-top">
