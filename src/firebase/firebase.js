@@ -4,21 +4,21 @@ import 'firebase/auth';
 import 'firebase/database';
 
 const prodConfig = {
-  apiKey: "AIzaSyCpuwMR2FNk79rmG5ngsjJRxiDEvyY5uNA",
-  authDomain: "authentication-88960.firebaseapp.com",
+  apiKey: TYPE YOUR OWN API KEY,
+  authDomain: DOMAIN,
   databaseURL: "https://authentication-88960.firebaseio.com",
   projectId: "authentication-88960",
   storageBucket: '',
-  messagingSenderId:"976559648766",
+  messagingSenderId:MESSAGE ID,
 };
 
 const devConfig = {
-  apiKey: "AIzaSyCpuwMR2FNk79rmG5ngsjJRxiDEvyY5uNA",
+  apiKey: TYPE YOUR OWN API KEY,
   authDomain:  "authentication-88960.firebaseapp.com",
   databaseURL: "https://authentication-88960.firebaseio.com",
   projectId: "https://authentication-88960.firebaseio.com",
   storageBucket: '',
-  messagingSenderId: "976559648766",
+  messagingSenderId: MESSAGE ID,
 };
 
 const config = process.env.NODE_ENV === 'production'
